@@ -1,0 +1,167 @@
+.text-nav {
+    color: black;
+    font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+    font-size: 1.5em;
+    font-weight: 300;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+    line-height: 1.6;
+    letter-spacing: 0.5px;
+    display: flex;
+    align-items: center;
+}
+
+.text-nav .logo-image {
+    bottom: 15px;
+    width: 85px;
+    height: auto;
+    display: inline-block;
+    vertical-align: middle;
+}
+
+.info-bar {
+    background-color: black;
+    color: #fff;
+    padding: 0.5rem 1rem;
+    text-align: center;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Roboto', sans-serif;
+    line-height: 1.6;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+nav {
+    background: #e6dfdf6b;
+    color: #333;
+    box-shadow: 0 8px 8px rgba(0, 0, 0, 0.1);
+    border: 4px solid #5c5555;
+}
+
+nav ul {
+    list-style: none;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    height: 90px;
+}
+
+nav ul li {
+    margin: 0;
+}
+
+nav ul li a {
+    color: #ffffff;
+    text-decoration: none;
+    padding: 0.25rem 0.75rem;
+    transition: background 0.3s;
+}
+
+.search-box {
+    display: none;
+    position: fixed;
+    top: 130px;
+    left: 50%;
+    transform: translateX(-50%);
+    width: 0;
+    background: #fff;
+    border: 1px solid #ddd;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    z-index: 10;
+    padding: 0;
+    box-sizing: border-box;
+    transition: all 0.5s ease;
+    border-radius: 30px;
+}
+
+.search-box.open {
+    width: 80%;
+    padding: 1rem;
+}
+
+.search-box input {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+header {
+    background: #f4f4f4;
+    padding: 2rem;
+    text-align: center;
+}
+
+.container {
+    display: flex;
+    flex: 1;
+    overflow: hidden;
+    padding: 1rem;
+    margin: 0;
+    background: linear-gradient(135deg, #ab88eb 0%, #F8BBD0 100%);
+    justify-content: center;
+    position: relative;
+}
+
+.Chenar_info {
+    position: absolute;
+    background-color: white;
+    border-radius: 10px;
+    padding: 1rem;
+    overflow: hidden;
+    box-shadow: -2px 0px 15px rgb(0, 0, 0);
+    margin-top: 6rem;
+}
+
+.shopping-cart-btn {
+    position: fixed;
+    top: 60px;
+    right: 20px;
+    background-color: white;
+    box-shadow: 0 6px 9px rgba(0, 0, 0, 0.1);
+    border: none;
+    cursor: pointer;
+    z-index: 1000;
+    width: 45px;
+    height: 40px;
+    border-radius: 20px;
+}
+
+.shopping-cart-btn img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 20px;
+    box-shadow: -2px 0px 15px rgb(0, 0, 0);
+}
+
+button[type="submit"], .btn-checkout {
+    background-color: #FFD1DC;
+    color: white;
+    border: none;
+    padding: 12px 24px;
+    text-align: center;
+    text-decoration: none;
+    display: inline-block;
+    font-size: 16px;
+    margin: 10px 0;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.2s ease;
+}
+
+.logo-image {
+    width: 50px;
+    height: auto;
+    margin-left: 10px;
+    vertical-align: middle;
+}

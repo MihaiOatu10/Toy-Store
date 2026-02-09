@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Toy Store</title>
+    <link rel="stylesheet" href="stil_pag_princip.css">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <div class="info-bar">
+        <p>Livrare gratuita pentru comenzi de peste ... lei&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Expediere in 24-48h</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#Deschide Cautare" id="search-link"><div class="text-nav">Cautare</div></a></li>
+            <li>
+                <a href="Site.html">
+                    <div class="text-nav">
+                    <img src="IMGstatic/file-VC2LZR86tYByQtYYTmsNQUrA.png" alt="Logo" class="logo-image">
+                    </div>
+                </a>
+            </li>
+            <li><a href="Contact.html"><div class="text-nav">Contact</div></a></li>
+        </ul>
+    </nav>
+    <form action="Produse.php" method="get" id="search-form">
+        <div class="search-box" id="search-box">
+            <input type="text" name="search" placeholder="Cauta...">
+            <button type="submit">Cauta</button>
+        </div>
+    </form>
+    <div class="container">
+        <section id="left">
+            <a href="Produse.php?gender=1">
+                <div class="text-stylish">
+                    <h2>Fete</h2>
+                </div>
+            </a>
+        </section>
+        <section id="center">
+            <a href="Produse.php?gender=3">
+                <div class="text-stylish">
+                    <h2>Bebelusi</h2>
+                </div>
+            </a>
+        </section>
+        <section id="right">
+            <a href="Produse.php?gender=2">
+                <div class="text-stylish">
+                    <h2>Baieti</h2>
+                </div>
+            </a>
+        </section>        
+    </div>
+    <a href="cart.php" class="shopping-cart-btn">
+        <img src="IMGstatic/cart.jpg" alt="Coș de cumpărături">
+    </a>    
+    <script src="script_pagP.js"></script>
+</body>
+</html>

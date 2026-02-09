@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Confirmare Comandă</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f4;
+            color: #333;
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 600px;
+            background-color: #fff;
+            padding: 20px;
+            margin: 0 auto;
+            border-radius: 10px;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+        }
+        h1 {
+            color: #5fbae9;
+        }
+        p {
+            line-height: 1.6;
+        }
+        .footer {
+            margin-top: 20px;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>Mulțumim pentru comanda dvs, {{name}}!</h1>
+        <p>Bună ziua,</p>
+        <p>Am primit comanda dvs.</p>
+        <p><strong>Detalii comandă:</strong></p>
+        <ul>
+            <li>ID Comandă: {{order_id}}</li>
+            <li>Data: {{order_date}}</li>
+        </ul>
+        <div class="footer">
+        </div>
+    </div>
+</body>
+</html>
